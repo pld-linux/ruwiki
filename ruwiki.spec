@@ -3,6 +3,7 @@
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 %define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
 Summary:	A Wiki written in Ruby
+Summary(pl):	Wiki napisane w Ruby
 Name:		ruwiki
 Version:	0.9.3
 Release:	1
@@ -19,11 +20,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_cgibindir	/home/services/httpd/cgi-bin
 
-
 %description
 Ruwiki is a simple, extensible Wiki-clone written in Ruby, supporting
 CGI and WEBrick interfaces, templates, CSS formatting, namespaces, and
 internationalisation. A focus on antispam techniques has been applied.
+
+%description -l pl
+Ruwiki to prsty, rozszerzalny klon Wiki napisany w Ruby. Obs³uguje
+skrypty CGI oraz interfejsy WEBrick, skórki, formatowanie przy uzyciu
+CSS a tak¿e internacjonalizacje. Posiada mechanizmy antyspamowe.
 
 %prep
 %setup -q
