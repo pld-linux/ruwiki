@@ -7,7 +7,7 @@ Name:		ruwiki
 Version:	0.9.3
 Release:	1
 License:	Ruby License
-Group:		Development/Languages
+Group:		Applications/WWW
 Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 # Source0-md5:	f5538cc2a723438954b1466edd6dfbed
 Source1:	setup.rb
