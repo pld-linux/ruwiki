@@ -11,7 +11,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 # Source0-md5:	f5538cc2a723438954b1466edd6dfbed
 Source1:	setup.rb
-URL:	http://rubyforge.org/projects/ruwiki/
+URL:		http://rubyforge.org/projects/ruwiki/
 BuildRequires:	ruby
 Requires:	ruby-Diff-LCS
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,7 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-Ruwiki is a simple, extensible Wiki-clone written in Ruby, supporting CGI and WEBrick interfaces, templates, CSS formatting, namespaces, and internationalisation. A focus on antispam techniques has been applied.
+Ruwiki is a simple, extensible Wiki-clone written in Ruby, supporting
+CGI and WEBrick interfaces, templates, CSS formatting, namespaces, and
+internationalisation. A focus on antispam techniques has been applied.
 
 %prep
 %setup -q
