@@ -26,8 +26,8 @@ CGI and WEBrick interfaces, templates, CSS formatting, namespaces, and
 internationalisation. A focus on antispam techniques has been applied.
 
 %description -l pl
-Ruwiki to prsty, rozszerzalny klon Wiki napisany w Ruby. Obs³uguje
-skrypty CGI oraz interfejsy WEBrick, skórki, formatowanie przy uzyciu
+Ruwiki to prosty, rozszerzalny klon Wiki napisany w Ruby. Obs³uguje
+skrypty CGI oraz interfejsy WEBrick, skórki, formatowanie przy u¿yciu
 CSS a tak¿e internacjonalizacje. Posiada mechanizmy antyspamowe.
 
 %prep
