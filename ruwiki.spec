@@ -11,6 +11,7 @@ Group:		Applications/WWW
 Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 # Source0-md5:	f5538cc2a723438954b1466edd6dfbed
 Source1:	setup.rb
+# Source1-md5:	17e93fc639caf25d7d1abbb400335b1d
 URL:		http://rubyforge.org/projects/ruwiki/
 BuildRequires:	ruby
 Requires:	ruby-Diff-LCS
