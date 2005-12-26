@@ -1,7 +1,3 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
 Summary:	A Wiki written in Ruby
 Summary(pl):	Wiki napisane w Ruby
 Name:		ruwiki
@@ -13,6 +9,7 @@ Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 # Source0-md5:	f5538cc2a723438954b1466edd6dfbed
 Source1:	setup.rb
 URL:		http://rubyforge.org/projects/ruwiki/
+BuildRequires:	rpmbuild(macros) >= 1.272
 BuildRequires:	ruby
 Requires:	ruby-Diff-LCS
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,8 +28,6 @@ CSS a tak¿e internacjonalizacje. Posiada mechanizmy antyspamowe.
 
 %prep
 %setup -q
-
-%build
 install %{SOURCE1} .
 mkdir share/ruwiki -p
 mv data share/ruwiki/data
@@ -41,9 +36,11 @@ mv share data
 mkdir cgi-bin
 mv bin/ruwiki.cgi cgi-bin
 rm bin/ruwiki_service.rb
+
+%build
 ruby setup.rb config \
-        --rb-dir=%{ruby_rubylibdir} \
-				--so-dir=%{ruby_archdir}
+	--rb-dir=%{ruby_rubylibdir} \
+	--so-dir=%{ruby_archdir}
 ruby setup.rb setup
 
 %install
