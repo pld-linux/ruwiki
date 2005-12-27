@@ -2,7 +2,7 @@ Summary:	A Wiki written in Ruby
 Summary(pl):	Wiki napisane w Ruby
 Name:		ruwiki
 Version:	0.9.3
-Release:	1
+Release:	2
 License:	Ruby License
 Group:		Applications/WWW
 Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
@@ -10,7 +10,7 @@ Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 Source1:	setup.rb
 URL:		http://rubyforge.org/projects/ruwiki/
 BuildRequires:	rpmbuild(macros) >= 1.272
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 Requires:	ruby-Diff-LCS
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
