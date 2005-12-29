@@ -9,9 +9,10 @@ Source0:	http://rubyforge.org/frs/download.php/2314/%{name}-%{version}.tar.gz
 # Source0-md5:	f5538cc2a723438954b1466edd6dfbed
 Source1:	setup.rb
 URL:		http://rubyforge.org/projects/ruwiki/
-BuildRequires:	rpmbuild(macros) >= 1.272
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 Requires:	ruby-Diff-LCS
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_cgibindir	/home/services/httpd/cgi-bin
