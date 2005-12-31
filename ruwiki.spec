@@ -12,7 +12,7 @@ URL:		http://rubyforge.org/projects/ruwiki/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 Requires:	ruby-Diff-LCS
-%ruby_mod_ver_requires_eq
+%{?ruby_mod_ver_requires_eq}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_cgibindir	/home/services/httpd/cgi-bin
