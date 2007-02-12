@@ -1,5 +1,5 @@
 Summary:	A Wiki written in Ruby
-Summary(pl):	Wiki napisane w Ruby
+Summary(pl.UTF-8):   Wiki napisane w Ruby
 Name:		ruwiki
 Version:	0.9.3
 Release:	2
@@ -22,10 +22,10 @@ Ruwiki is a simple, extensible Wiki-clone written in Ruby, supporting
 CGI and WEBrick interfaces, templates, CSS formatting, namespaces, and
 internationalisation. A focus on antispam techniques has been applied.
 
-%description -l pl
-Ruwiki to prosty, rozszerzalny klon Wiki napisany w Ruby. Obs≥uguje
-skrypty CGI oraz interfejsy WEBrick, skÛrki, formatowanie przy uøyciu
-CSS a takøe internacjonalizacje. Posiada mechanizmy antyspamowe.
+%description -l pl.UTF-8
+Ruwiki to prosty, rozszerzalny klon Wiki napisany w Ruby. Obs≈Çuguje
+skrypty CGI oraz interfejsy WEBrick, sk√≥rki, formatowanie przy u≈ºyciu
+CSS a tak≈ºe internacjonalizacje. Posiada mechanizmy antyspamowe.
 
 %prep
 %setup -q
