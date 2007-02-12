@@ -1,5 +1,5 @@
 Summary:	A Wiki written in Ruby
-Summary(pl.UTF-8):   Wiki napisane w Ruby
+Summary(pl.UTF-8):	Wiki napisane w Ruby
 Name:		ruwiki
 Version:	0.9.3
 Release:	2
